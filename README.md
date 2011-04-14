@@ -10,10 +10,12 @@ Use ansi color to render the output on console screen;
 
 ###Tags
   
-   Similar to html tag, __<TAG>text</TAG>__  __<ANOTHERTAG>text</ANOTHERTAG>__
+   Similar to html tag:
 
-   See details at example/exmaple.cmk file
-;
+   __<TAG>text</TAG>__
+
+   See details at example/exmaple.cmk
+
 ####Current support tags
 
    red, yellow, gree, white, cyan, magenta, blue, grey         

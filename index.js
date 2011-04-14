@@ -1,7 +1,8 @@
-var fs = require('fs'),
-    path = require('path');
+var fs             = require('fs'),
+    path           = require('path');
 
-exports.render = require('./lib/render.js');
+exports.render     = require('./lib/render.js').render;
+exports.renderSync = require('./lib/render.js').renderSync;
 
-exports.version = JSON.parse(fs.readFileSync(path.join(__dirname, './package.json')));
+exports.version    = JSON.parse(fs.readFileSync(path.join(__dirname, './package.json'))).version;
 

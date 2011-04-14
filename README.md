@@ -10,7 +10,7 @@ Use ansi color to render the output on console screen;
 
 ###Tags
   
-   Similar to html tag, <TAG>text</TAG> <ANOTHERTAG>text</ANOTHERTAG>
+   Similar to html tag, __<TAG>text</TAG>__  __<ANOTHERTAG>text</ANOTHERTAG>__
 
    See details at example/exmaple.cmk file
 ;
@@ -24,9 +24,9 @@ Use ansi color to render the output on console screen;
 ####Require
 
     var util = require('util');
-    consolemark = require('consolemark');
+    cmk = require('consolemark');
 
-    consolemark.render('./test.cmk', function(err, data) {
+    cmk.render('./test.cmk', function(err, data) {
       if (err) {throw err;}
       data.forEach(function(d) { // return a array of colorful string
         util.print(d);

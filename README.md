@@ -12,7 +12,7 @@ Use ansi color to render the output on console screen;
   
    Similar to html tag:
 
-   __<TAG>text</TAG>__
+       <yellow>text</yellow>
 
    See details at example/exmaple.cmk
 

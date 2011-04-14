@@ -1,7 +1,7 @@
 var util = require('util');
 consolemark = require('consolemark');
 
-consolemark.render('./test.cmk', function(err, data) {
+consolemark.render('../example/example.cmk', function(err, data) {
     if (err) {throw err;}
     if (typeof data === 'string') {
       util.puts(data);

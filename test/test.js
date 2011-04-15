@@ -1,7 +1,9 @@
 var util = require('util');
 consolemark = require('../index.js');
 
-consolemark.render('../test/howto.cmk', function(err, data) {
+
+// Asynchonous method
+consolemark.render('../example/example.cmk', function(err, data) {
     if (err) {throw err;}
     if (typeof data === 'string') {
       util.puts(data);
@@ -14,3 +16,9 @@ consolemark.render('../test/howto.cmk', function(err, data) {
     }
 });
 
+// Synchronous method
+var colorful = consolemark.renderSync('../example/howto.cmk');
+
+colorful.forEach(function(c) {
+    util.print(c);
+});

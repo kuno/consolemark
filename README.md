@@ -12,13 +12,15 @@ Use ansi color to render the output on console screen;
   
    Similar to html tag:
 
-       <yellow>text</yellow>
+       <yellow>text1</yellow> <bold>text2</bold> <white>text3</white>
+
+   * No nested tags, please ;).
 
    See details at example/exmaple.cmk
 
 ####Current support tags
 
-   red, yellow, gree, white, cyan, magenta, blue, grey         
+   red, yellow, gree, white, cyan, magenta, blue, grey, bold, italic, underline, inverse         
 
 
 ###Usage
@@ -28,11 +30,18 @@ Use ansi color to render the output on console screen;
     var util = require('util');
     cmk = require('consolemark');
 
-    cmk.render('./test.cmk', function(err, data) {
+    // Asynchronous method
+    cmk.render('./path/to/cmk/file', function(err, data) {
       if (err) {throw err;}
       data.forEach(function(d) { // return a array of colorful string
         util.print(d);
       });
+     });
+
+     // Synchronous method
+     var colorfule = cmk.renderSync('path/to/cmk/file');
+     colorfule.forEach(function(c) {
+       util.print(c);
      });
  
 ####Commandline tool

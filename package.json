@@ -1,7 +1,7 @@
 {
   "name":"consolemark",
     "description":"try parse to something console con display.",
-    "version":"0.0.3",
+    "version":"0.0.4pre",
     "author":"Guan 'kuno' Qing <neokuno AT gmail DOT com>",
     "contributors":[],
     "repository":

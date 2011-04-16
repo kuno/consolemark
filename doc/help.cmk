@@ -1,0 +1,12 @@
+<yellow>cmk</yellow> - <bold>consolemark commandline tool</bold>
+
+<cyan>Usage</cyan>:
+  cmk [OPTION] [FILE]
+
+<cyan>Option</cyan>:
+  <yellow>-v | --version</yellow>: version
+
+  <yellow>-h | --help</yellow>: help
+
+<cyan>Homepage</cyan>:
+  <magenta>http://github.com/kuno/consolemark</magenta>

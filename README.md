@@ -7,10 +7,15 @@ Use ansi color to render the output on console screen;
 
     npm install consolemark
 
+###File format
+
+   Consolemark can parse any text file, no matter its filename extension.
+
+   But for convenience reason, I recommend that you name the file with '.cmk' extension.
 
 ###Tags
   
-   Similar to html tag:
+   Consolemark uses tags to render text, it is similar to html tag:
 
        <yellow>text1</yellow> <bold>text2</bold> <white>text3</white>
 

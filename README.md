@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/kuno/consolemark.png)](http://travis-ci.org/kuno/consolemark)
 Use ansi color to render the output on console screen;
 
 ![output](https://github.com/kuno/consolemark/raw/master/misc/output.png)
